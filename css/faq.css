@@ -85,12 +85,6 @@ section h1{
 
 @media (min-width:320px) and (max-width:480px) {
 
-    nav ul li a::after,
-    nav ul li a.active::after {
-        width: calc(100%);
-        margin: 0;
-    }
-
     header {
         height: 300px;
         padding: 4rem 0;
@@ -99,4 +93,7 @@ section h1{
     header h1 {
         font-size: 35px;
     }
+    .accordion{
+    width: 100%;
+}
 }
