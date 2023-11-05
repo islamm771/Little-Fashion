@@ -1,0 +1,102 @@
+body {
+    font-family: 'Inter', sans-serif !important;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #f0f8ff;
+    padding: 7rem 0;
+}
+
+header h1 {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+header h1 span {
+    color: orange;
+}
+
+section h1{
+    font-weight: 800;
+    margin-bottom: 1.75rem;
+}
+
+
+.accordion{
+    width: 75%;
+}
+.accordion .accordion-item{
+    border-bottom: 1px solid #ddd !important;
+    border-radius: 0;
+}
+.accordion .accordion-item .accordion-header{
+    padding: 15px 0;
+}
+.accordion .accordion-item button{
+    background: none;
+    font-size: 25px;
+    padding: 15px 0;
+}
+.accordion .accordion-item button:focus{
+    background: none;
+    box-shadow: none;
+}
+.accordion .accordion-item button:not(.collapsed){
+    box-shadow: none !important;
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion .accordion-item .accordion-body{
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 22px;
+    font-size: 20px;
+    color: #5b5b5b;
+    font-weight: 300;
+}
+
+
+.question-item button{
+    display: block;
+    width: 100%;
+    border: 0;
+    background-color: white;
+    padding: 15px 0;
+    text-align: left;
+    font-size: 25px;
+}
+.question-item button.active{
+    color: blue;
+    border-bottom: 1px solid #ddd;
+}
+.question-item div{
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    border-bottom: 1px solid #ddd;
+}
+.question-item div p{
+    color: #5b5b5b;
+    font-size: 20px;
+    padding: 2rem 0;
+}
+
+
+@media (min-width:320px) and (max-width:480px) {
+
+    nav ul li a::after,
+    nav ul li a.active::after {
+        width: calc(100%);
+        margin: 0;
+    }
+
+    header {
+        height: 300px;
+        padding: 4rem 0;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,303 @@
+body{
+    font-family: 'Inter', sans-serif !important;
+    overflow-x: hidden;
+}
+.special-link{
+    font-size: 15px;
+    color: #8a8686;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.special-link svg{
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 14px;
+}
+.special-link:hover{
+    color: orange;
+}
+.special-link:hover svg{
+    opacity: 1;
+}
+
+header{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+header .img-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -555;
+}
+header .img-container img{
+    position: absolute;
+    object-fit: cover;
+    transition: 0.6s;
+    opacity: 0;
+}
+header .img-container img.active{
+    opacity: 1;
+}
+header::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to top, black, transparent 75%);
+}
+
+header .container .header-text{
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 150px;
+}
+header .fades{
+    height: 255px;
+    overflow: hidden;
+}
+header .fades div{
+    height: 255px;
+    transition: 0.5s;
+}
+header .container div h1{
+    font-size: 65px;
+    font-weight: 800;
+}
+header .container div p{
+    font-size: 25px;
+    font-weight: 100;
+    color: #fff;
+    margin-bottom: 35px;
+}
+header .container div button{
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    padding: 16px 26px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+header .container ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 14px;
+}
+header .container ul li span{
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 4px solid #DDD;
+    border-radius: 50%;
+    margin: 5px 0;
+    cursor: pointer;
+}
+header .container ul li span.active{
+    background-color: #fff;
+    border-color: #fff;
+}
+.about{
+    height: 100vh;
+}
+.about h1{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1.4;
+    margin-top: 3rem;
+}
+.about h1 span ,.about .row h2 span,.retail .row .bimg div h1 span{
+    color: orange;
+}
+.about .row .about-btns ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.about .row .about-btns button{
+    color: #ddd;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border-left: 1px solid #ddd;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 10px;
+    transition: 0.5s;
+}
+
+.about .row .about-btns button:hover , .about .row .about-btns button.active{
+    color: orange;
+    border-color: orange;
+}
+.about .about-change{
+    position: relative;
+    min-height: 400px;
+}
+.about .about-change section{
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    width: 100%;
+}
+.about .about-change section.active {
+    opacity: 1;
+}
+.about .row h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+.about .row p{
+    font-size:20px;
+    color: #949191;
+}
+.about .row .two iframe{
+    width: 100%;
+    height: 300px;
+}
+.about .row .three ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.about .row .three ul li{
+    font-weight: 700;
+    padding: 10px 0;
+    position: relative;
+}
+.about .row .three ul li::after{
+    content: attr(data-width);
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    font-size: 20px;
+}
+.about .row .three ul li span{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #ddd;
+}
+.retail{
+    background-color: #f0f8ff;
+    /* margin-top: 3rem; */
+    margin-bottom: 3rem;
+}
+.retail .row .bimg div{
+    padding: 10px 40px;
+}
+.retail .row .bimg div h1{
+    font-size:40px;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+.retail .row .bimg div p{
+    font-size:25px;
+    color: #bfbfbf;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.featured{
+    padding-bottom: 5rem !important;
+}
+.featured h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3.25rem;
+}
+.featured .row .img-details{
+    padding: 10px 15px;
+    position: relative;
+}
+
+.featured .row .img-details a{
+    font-size: 25px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
+}
+.featured .row .img-details a:hover{
+    color: orange;
+}
+.featured .row .img-details span:first-of-type{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.featured .row .img-details span{
+    color: #949191;
+}
+
+.featured .row div div img:hover{
+    transition: 0.5s;
+    box-shadow: 5px 6px 14px 5px #ddd;
+}
+
+.featured .view{
+    font-size: 13px;
+    color: #8a8686;
+    text-decoration: none;
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-bottom: 2px solid #ddd;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.featured a:hover{
+    color: orange;
+}
+
+@media (min-width:320px) and (max-width:480px){
+    header{
+        height: 280px;
+        background-size: 100%;
+    }
+    header .fades{
+        height: 205px;
+    }
+    header .container .header-text {
+        bottom: 11.5px;
+    }
+
+    header .container div h1 {
+        font-size: 35px;
+    }
+
+    header .container div p {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    header .container div button {
+        padding: 16px 20px;
+        font-size: 13px;
+    }
+    header .container ul li span{
+        width: 20px;
+        height: 20px;
+    }
+    header .row div.col-2{
+        padding: 0 5px;
+    }
+    .about{
+        height: 150vh;
+    }
+    .about .about-change {
+        position: relative;
+        min-height: 650px;
+    }
+} 

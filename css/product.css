@@ -1,0 +1,107 @@
+body {
+    font-family: 'Inter', sans-serif !important;
+    overflow-x: hidden;
+}
+header{
+    background-color: #f0f8ff;
+    padding: 7rem 0;
+}
+header h1{
+    font-size: 60px;
+    font-weight: 800;
+}
+header h1 span{
+    color: orange;
+}
+
+.new-arrival {
+    padding: 5rem 0;
+}
+
+.new-arrival h1 {
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 3.25rem;
+}
+
+.new-arrival .row .img-details {
+    padding: 15px;
+    position: relative;
+}
+
+.new-arrival .row .img-details a {
+    font-size: 25px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.new-arrival .row .img-details a:hover {
+    color: orange;
+}
+
+.new-arrival .row .img-details span:first-of-type {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 16px;
+}
+
+.new-arrival .row .img-details span {
+    color: #949191;
+    font-size: 14px;
+}
+.new-arrival .row div div img{
+    transition: all 0.5s ease-out;
+}
+.new-arrival .row div div img:hover {
+    box-shadow: 5px 6px 14px 5px #ddd;
+}
+.new-arrival a:hover {
+    color: orange;
+}
+
+.new-arrival .img-dis{
+    background-color: #fff;
+    color: #797979;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 7px;
+}
+
+.new-arrival .fav{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.new-arrival .fav input{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+.new-arrival .fav span svg{
+    font-size: 20px;
+    color: #fff;
+    transition: 0.5s;
+}
+.new-arrival .fav input:checked ~ span svg{
+    color: red;
+}
+
+
+@media (min-width:320px) and (max-width:480px) {
+    header {
+        height: 280px;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+}

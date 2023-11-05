@@ -1,0 +1,115 @@
+body {
+    font-family: 'Inter', sans-serif !important;
+    overflow-x: hidden;
+}
+header {
+    background-color: #f0f8ff;
+    padding: 7rem 0;
+}
+
+header h1 {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+header h1 span {
+    color: orange;
+}
+
+.product{
+    padding: 5rem 0;
+}
+
+.product .row div img{
+    transition: 0.5s;
+}
+.product .row div img:hover{
+    box-shadow: 0px 0px 14px 5px #ddd;
+}
+.product .row .product-details{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.product .row .product-details h1{
+    width: 80%;
+    font-weight: 800;
+}
+.product .row .product-details .price{
+    width: 20%;
+    color: #949191;
+}
+.product .row .product-details .info{
+    width: 100%;
+    color: #949191;
+    font-size: 14px;
+}
+
+.product .discribtion p:last-child{
+    color: #535353;
+    font-weight: 100;
+    font-size: 23px;
+}
+.product .form {
+    padding: 20px 0;
+    display: flex;
+    gap: 15px;
+}
+.product .form select{
+    width: 50%;
+    padding: 15px 20px;
+    border-color: #ddd;
+    border-radius: 0;
+    box-shadow: none;
+}
+.product .form .add-toCard ,.product .form .check-out{
+    display: inline-block;
+    width: 50%;
+    border: none;
+    outline: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+.product .form .add-toCard:hover,
+.product .form .check-out:hover{
+    background-color: orange;
+}
+
+.product .form .modal{
+    --bs-modal-width: 800px;
+}
+.product .form .modal .modal-body p{
+    color: #949191;
+}
+.product .form .modal .modal-body p:first-of-type{
+    font-size: 20px;
+}
+.product .links{
+    padding: 1.75rem 0;
+}
+.product .links a{
+    display: inline-block;
+    color: #949191;
+    margin: 0 4px;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.product .links a:hover{
+    color: orange;
+}
+@media (min-width:320px) and (max-width:480px) {
+    header {
+        height: 280px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+    .product .discribtion p:last-child{
+        font-size: 18px;
+    }
+}

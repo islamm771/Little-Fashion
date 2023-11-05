@@ -1,0 +1,248 @@
+body{
+    font-family: 'Inter', sans-serif !important;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #f0f8ff;
+}
+header div h1{
+    font-size: 65px;
+    font-weight: 800;
+    padding: 8rem 6rem;
+    margin: 0;
+}
+header div h1 span{
+    color: orange;
+}
+.team{
+    padding:5rem 0;
+    background-color: #e0e0e0;
+}
+.team h1{
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 3rem;
+
+}
+.team h1 span{
+    color: orange;
+}
+.team .team-member>div{
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+}
+.team .team-member img{
+    border-radius: 50%;
+}
+.team .team-member .team-member-info{
+    padding: 0 15px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team .team-member h5{
+    font-weight: 700;
+    display: inline-block;
+    width: 70%;
+    margin: 0;
+}
+.team .team-member span{
+    color: #818181;
+    font-weight: 700;
+    font-size: 16px;
+}
+.team .team-member button{
+    border: 0;
+    color: white;
+    background-color: #e0e0e0;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+.team .team-member button svg{
+    background-color: white;
+    color: #ddd;
+    border-radius: 50%;
+    padding: 2px;
+    font-size: 10px;
+}
+.team .team-member button:hover svg{
+    background-color: #000;
+}
+.slider-section{
+    padding: 5rem 0;
+}
+.slider-section h1{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.slider-section h1 span{
+    color: orange;
+}
+
+.slider-section .slider-container .slickSlider{
+    width: 720px;
+    margin: auto;
+    background-color: #fff;
+    height: 200px;
+}
+.item >p{
+    color: #717275;
+    font-size: 25px;
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+.item img{
+    width: 60px;
+    border-radius: 50%;
+}
+.item div p{
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 1.2;
+    width: 70%;
+    margin-bottom: 0;
+}
+.item div p span{
+    color: #818181;
+    font-weight: 700;
+}
+.slick-prev , .slick-next{
+    display: none !important;
+}
+.slick-dots li{
+    width: 130px !important;
+    height: 2px !important;
+    margin: 0 0px !important;
+}
+.slick-dots li button{
+    width: 130px !important;
+    height: 2px !important;
+    padding: 0 !important;
+    background-color: #ddd !important;
+}
+.slick-dots li button:hover {
+    background-color: #000 !important;
+}
+.slick-dots li.slick-active > button{
+    background-color: #000 !important;
+}
+.slick-dots li button::before{
+    content: "" !important;
+}
+.pop{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%);
+    transition: 0.5s;
+    position: fixed;
+    top: -100%;
+}
+.pop.active{
+    top:0
+}
+.team-details{
+    width: 800px;
+    min-height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 5rem 3rem;
+    border-radius: 5px;
+}
+.pop .team-details .close{
+    color: #ddd;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 0;
+    background-color: white;
+}
+.pop .team-details .close:hover{
+    color: orange;
+}
+.pop .team-details .team-name {
+    margin: 3rem 0 5rem;
+}
+.team-details .team-name h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.team-details .team-name span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.team-details .container > p{
+    font-size: 20px;
+    font-weight: 700;
+}
+.team-details .container .row div{
+    font-size: 20px;
+}
+.team-details .container .contact{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.team-details .container .contact p{
+    font-weight: 700;
+    margin: 0;
+}
+.team-details .container .contact ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding-left: 25px;
+}
+.team-details .container .contact ul li a{
+    color: #b5b5b5;
+}
+.team-details .container .contact ul li a:hover{
+    color: orange;
+}
+.contact ul li a svg{
+    font-size: 18px;
+}
+
+
+@media (min-width:320px) and (max-width:480px) {
+    header div h1 {
+        font-size: 40px;
+        font-weight: 800;
+        padding: 3rem 1rem;
+        margin: 0;
+    }
+    .slider-section {
+        height: auto;
+    }
+    .slider-section .slider-container .slickSlider {
+        width: 300px;
+        height: 320px;
+    }
+    .slick-dots li {
+        width: 60px !important;
+    }
+    .slick-dots li button {
+        width: 65px !important;
+    }
+    .team-details{
+        width: 350px;
+        padding: 5rem 1rem;
+    }
+    .pop .team-details .team-name {
+        margin: 1rem 0 3rem;
+    }
+    .pop .team-details .container{
+        margin-top: 2rem;
+    }
+}

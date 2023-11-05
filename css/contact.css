@@ -1,0 +1,78 @@
+body {
+    font-family: 'Inter', sans-serif !important;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #f0f8ff;
+}
+
+header h1 {
+    font-size: 60px;
+    font-weight: 800;
+    padding: 8rem 6rem;
+}
+
+header h1 span {
+    color: orange;
+}
+.contact form .floating-form{
+    position: relative;
+}
+.floating-form label{
+    position: absolute;
+    top: 16px;
+    left: 8px;
+    transition: 0.5s;
+    color: #ddd;
+}
+.floating-form input , .floating-form textarea{
+    padding: 16px;
+}
+.floating-form input:focus , .floating-form textarea:focus{
+    padding-top: 25px;
+}
+.floating-form input:focus ~ label ,.floating-form textarea:focus~label {
+    transform: scale(0.8) translateY(-10px);
+}
+form button{
+    background-color: #000;
+    color: #fff;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.contact .row div h5{
+    font-weight: 700;
+}
+.contact .row div p{
+    font-weight: 700;
+    margin-top: 1.25rem;
+}
+.contact .social-links{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 16px;
+}
+.contact .social-links li a svg{
+    color: #5d5d5d;
+    transition: 0.5s;
+}
+.contact .social-links li a svg:hover{
+    color: orange;
+}
+
+
+@media (min-width:320px) and (max-width:480px) {
+    header h1 {
+        font-size: 30px;
+        padding: 3rem 1rem;
+    }
+    .contact .row div p{
+        font-size: 14px;
+    }
+}
