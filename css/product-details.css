@@ -80,6 +80,7 @@ header h1 span {
 
 .product .form .modal{
     --bs-modal-width: 800px;
+    z-index:9999999;
 }
 .product .form .modal .modal-body p{
     color: #949191;
