@@ -1,7 +1,7 @@
 nav{
     position: sticky !important;
     top: 0;
-    box-shadow: -2px 0px 14px 5px #ddd;
+    box-shadow: 0px -4px 14px 5px #ddd;
     z-index: 9999;
 }
 nav div a h4 {
