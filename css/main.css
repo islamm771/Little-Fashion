@@ -145,10 +145,12 @@ header .container ul li span.active{
     position: absolute;
     opacity: 0;
     transition: 0.5s;
-    width: 100%;
+    z-index: 0;
+    /* width: 100%; */
 }
 .about .about-change section.active {
     opacity: 1;
+    z-index: 1;
 }
 .about .row h2{
     font-size: 30px;
@@ -191,18 +193,20 @@ header .container ul li span.active{
 }
 .retail{
     background-color: #f0f8ff;
-    /* margin-top: 3rem; */
     margin-bottom: 3rem;
 }
-.retail .row .bimg div{
+.retail .d-flex .bimg div{
     padding: 10px 40px;
 }
-.retail .row .bimg div h1{
+.retail .d-flex .bimg div h1{
     font-size:40px;
     font-weight: 700;
-    margin-bottom: 17px;
+    margin-bottom: 20px;
 }
-.retail .row .bimg div p{
+.retail .d-flex .bimg div h1 span{
+    color: orange;
+}
+.retail .d-flex .bimg div p{
     font-size:25px;
     color: #bfbfbf;
     font-weight: 300;
@@ -299,5 +303,17 @@ header .container ul li span.active{
     .about .about-change {
         position: relative;
         min-height: 650px;
+    }
+    .about .about-change section .row >div:first-child{
+        padding-right: 0px;
+    }
+    .retail .d-flex .bimg div h1{
+        font-size: 32px;
+    }
+    .retail .d-flex .bimg div p{
+        font-size: 20px;
+    }
+    .retail .d-flex .bimg div{
+        padding: 10px;
     }
 } 
