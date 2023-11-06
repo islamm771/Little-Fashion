@@ -235,6 +235,9 @@ header div h1 span{
     .slick-dots li button {
         width: 65px !important;
     }
+    .item>p {
+        font-size: 22px;
+    }
     .team-details{
         width: 350px;
         padding: 5rem 1rem;
