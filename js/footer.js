@@ -27,11 +27,10 @@ document.write(
                         <div class="col-4">\
                             <h4>Social</h4>\
                             <ul class="social-links">\
-                                <li><a href="#" class="text-white-50"> <i class="fa-brands fa-youtube"></i> </a></li>\
-                                <li><a href="#" class="text-white-50"> <i class="fa-brands fa-whatsapp"></i> </a></li>\
-                                <br class="d-block d-md-none">\
-                                <li><a href="#" class="text-white-50"> <i class="fa-brands fa-instagram"></i> </a></li>\
-                                <li><a href="#" class="text-white-50"> <i class="fa-brands fa-skype"></i> </a></li>\
+                               <li class="col-6 col-md-2 mb-2 mb-md-0"><a href="#" class="text-white-50"> <i class="fa-brands fa-youtube"></i> </a></li>\
+                                <li class="col-6 col-md-2 mb-2 mb-md-0"><a href="#" class="text-white-50"> <i class="fa-brands fa-whatsapp"></i> </a></li>\
+                                <li class="col-6 col-md-2 mb-2 mb-md-0"><a href="#" class="text-white-50"> <i class="fa-brands fa-instagram"></i> </a></li>\
+                                <li class="col-6 col-md-2 mb-2 mb-md-0"><a href="#" class="text-white-50"> <i class="fa-brands fa-skype"></i> </a></li>\
                             </ul>\
                         </div>\
                     </div>\
