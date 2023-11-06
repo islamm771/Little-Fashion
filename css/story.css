@@ -140,6 +140,7 @@ header div h1 span{
     transition: 0.5s;
     position: fixed;
     top: -100%;
+    z-index: 9999;
 }
 .pop.active{
     top:0
