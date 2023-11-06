@@ -32,6 +32,18 @@ header h1 span {
 .floating-form input:focus , .floating-form textarea:focus{
     padding-top: 25px;
 }
+.floating-form input::placeholder,
+.floating-form textarea::placeholder{
+    color: white !important;
+}
+
+.floating-form input:not(:placeholder-shown),
+.floating-form textarea:not(:placeholder-shown){
+    padding-top: 25px;
+}
+.floating-form input:not(:placeholder-shown)~label , .floating-form textarea:not(:placeholder-shown)~label{
+    transform: scale(0.8) translateY(-10px);
+}
 .floating-form input:focus ~ label ,.floating-form textarea:focus~label {
     transform: scale(0.8) translateY(-10px);
 }
